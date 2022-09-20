@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Forma DJR Micro,Arial,sans-serif;
+}
+
+.body{
+    background-color:#F1F0F0;
+}
+
+.header{
+    width: 100%;
+    height:60px;
+}
+.logo-box{
+    width: 100%;
+    margin-left:5rem;
+    margin-right:10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hp-logo{
+    height: 6vh;
+    width: 4vw;
+}
+
+/* header responsive */
+
+@media (min-width: 1200px){
+    .logo-box {
+        max-width: 1140px;
+    }
+    .hp-logo{
+        height: 6vh;
+        width: 4vw;
+    }
+}
+@media (min-width: 992px){
+    .logo-box {
+        max-width: 960px;
+    }
+    .hp-logo{
+        height: 6vh;
+        width: 4vw;
+    }
+}
+@media (min-width: 768px){
+    .logo-box {
+        max-width: 720px;
+    }
+    .hp-logo{
+        height: 6vh;
+        width: 4vw;
+    }
+}
+@media (min-width: 576px){
+    .logo-box {
+        max-width: 540px;
+    }
+    .hp-logo{
+        height: 6vh;
+        width: 4vw;
+    }
+}
+
+.back-label{
+    background-color: #007dba;
+    height: 250px;
+    position: static;
+}
+.inner-box{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.upper-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    margin-top: -13rem;
+    padding-bottom: 3rem;
+    /* background-color: #007dba; */
+}
+
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content:flex-end;
+    /* background-color: #007dba; */
+}
+
+.signup-header{
+    margin: 1.2rem 0;
+    text-align: center;
+    /* background-color: #007dba; */
+    font-size: 1.2rem;
+}
+
+.header-title{
+    /* background-color: #007dba; */
+    color: #ffff;
+}
+
+.header-desc{
+    /* background-color: #007dba; */
+    color: #ffff;
+}
+
+.signup-box{
+    display: flex;
+    margin: 1rem auto;
+    /* min-width: 290px; */
+    width: 30vw;
+    background-color: white;
+    border: 1px solid  rgb(255, 255, 255);
+    border-radius: 1rem;
+    /* color: rgb(33, 33, 33); */
+    box-shadow: rgb(33 33 33 / 10%) 0px 4px 16px;
+
+}
+.signup-innerbox{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 1.5rem;
+    justify-content: center;
+}
+.sign-in{
+    color:#0B9CD8;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sign-in:hover {
+    text-decoration: underline;
+    color: #0B9CD8;
+}
+
+.inner-footer{
+    display:flex;
+    padding: 1rem;
+    margin-bottom: 0;
+    /* justify-content:center; */
+    vertical-align: baseline;
+}
+
+.left-side{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 15rem;
+    margin-left: 0;
+}
+
+.hp-logo-f{
+    height: 2rem;
+    width: 2rem;
+}

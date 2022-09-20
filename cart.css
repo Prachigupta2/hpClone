@@ -1,0 +1,354 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.hp-logo {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 3rem;
+}
+
+.active:hover {
+    color:#0B9CD8 !important;
+}
+
+.sale {
+    color: red !important;
+}
+
+.icons {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/* schemes-section */
+.schemes-box {
+    width: 100%;
+    height: 40vh;
+    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.schemes-common-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+.schemes-common-box:hover{
+    color: #165DBA;
+}
+.bi-bookmark-fill {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.bi-bookmark-fill:hover{
+    color: #165DBA;
+}
+
+.bi-truck {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.bi-truck:hover{
+    color: #165DBA;
+}
+.bi-percent {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+.bi-percent:hover{
+    color: #165DBA;
+}
+
+.bi-person-workspace {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+.bi-person-workspace:hover{
+    color: #165DBA;
+}
+
+.bi-star-fill {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.bi-star-fill:hover{
+    color: #165DBA;
+}
+
+.bi-laptop {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.bi-laptop:hover{
+    color: #165DBA;
+}
+
+.scheme-text {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* schemes-section responsive */
+@media(max-width:1024px) {
+    .schemes-box {
+        flex-direction: column;
+        height: 160vh;
+    }
+
+    .pp {
+        padding-top: 5rem;
+    }
+
+    .dl {
+        padding-top: 2rem;
+    }
+
+    .schemes-common-box {
+        margin-top: 2rem;
+    }
+
+    .schemes-common-box:hover{
+        color: #165DBA;
+    }
+
+    .bi-bookmark-fill {
+        font-size: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+    }
+
+    .bi-truck {
+        font-size: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+    }
+
+    .bi-percent {
+        font-size: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+    }
+
+    .bi-person-workspace {
+        font-size: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+    }
+
+    .bi-star-fill {
+        font-size: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+    }
+
+    .bi-laptop {
+        font-size: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+    }
+
+    .scheme-text {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* products-section */
+.products-main-box {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+    
+}
+
+.products-inner-box{
+    padding: 1.5rem;
+    background-color: #F8F9F9;
+}
+
+.prdts {
+    width: 10rem;
+    height: 10rem;
+}
+
+.variety {
+    color: black;
+    text-align: center;
+}
+
+/* products-section responsive */
+@media(max-width:640px) {
+    .products-main-box {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .products-inner-box {
+        margin-top: 2rem;
+    }
+}
+
+/* featured section */
+.featured {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.shop-now {
+    font-weight: bold;
+    color: rgb(103, 103, 255);
+}
+
+.shop-now:hover{
+    background-color: #F8F9F9;
+    cursor: pointer;
+}
+
+.img-topper:hover{
+    cursor: pointer;
+}
+
+.feature-main-box {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.feature-main-box-two {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.feature-main-box-three {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+/* shop by user section */
+.shop-by-user {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.shop-by-user-main-box {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+/* feature-products section */
+.feature-products {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.featuredd-box {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+/* hp -india */
+.flag {
+    width: 3rem;
+    height: 2rem;
+    margin-top: 3rem;
+}
+
+.hp-india-box {
+    width: 50%;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    display: flex;
+    margin: auto;
+}
+
+/* footer starts */
+
+.footer-main {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    color: white;
+    margin-top: 7rem;
+}
+
+.semi-heading {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer-links{
+    cursor: pointer;
+}
+.footer-links:hover{
+    text-decoration: underline;
+}
+.social-icons {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+}
+
+/* footer responsive */
+
+@media(max-width:1024px) {
+    .footer-main {
+        flex-direction: column;
+        height: 150vh;
+    }
+}

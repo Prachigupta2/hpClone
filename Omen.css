@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.omen-navbar {
+    margin-top: 1rem;
+}
+
+.omen-brand {
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+ .circle {
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    padding: 1rem 1rem;
+    margin-top: 0rem 2rem;
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* border-radius: 50%; */
+}
+
+.circle a{
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    position:absolute;
+}
+
+.circle:before,.circle:after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg,#ff55e1,red,#ffb400);
+    height: calc(100% + 0.1rem);
+    width: calc(100% + 0.1rem);
+    top: 0;
+    left: 0;
+    background-size: 50%;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    /* filter: blur(1rem); */
+}
+
+.circle:hover a{
+    text-decoration: none;
+    color: white;
+}
+.circle:after{
+    filter: blur(1.5rem);
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 300% 0;
+    }
+
+    100%{
+        background-position: 400% 0;
+    }
+}
+
+.omen-links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 1rem;
+    font-size: 1rem !important;
+}
+
+.omen-links:hover {
+    border-bottom: 2px solid black;
+    /* transition: 1.5s; */
+}
+
+.bi-search {
+    margin-top: 0.3rem;
+}
+
+.search-input-omen::placeholder {
+    font-weight: lighter;
+}
+
+.search-mainbox-omen {
+    margin-right: 2.2rem;
+}
+
+/*------ navbar responsive------ */
+@media(max-width:1024px) {
+    .omen-links {
+        margin-left: 2.4rem;
+        margin-top: 1rem;
+    }
+
+    .search-mainbox-omen {
+        margin-left: 2.3rem;
+        margin-top: 1rem;
+    }
+
+    .omen-links:hover {
+        border-bottom: none;
+    }
+}
+
+@media(max-width:640px) {
+    .omen-links {
+        margin-left: 2.2rem;
+        margin-top: 1rem;
+    }
+
+    .search-mainbox-omen {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .omen-links:hover {
+        border-bottom: none;
+    }
+}
+
+
+
+/*------- header section starts------- */
+.flex-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main-box {
+    width: 90%;
+    height: 90vh;
+    margin-top: 4rem;
+    background-image: url("/omen-images/header-image.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omen-header-text {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 6rem;
+}
+
+/*------- header section responsive------- */
+@media(max-width:640px) {
+    .header-main-box {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .omen-header-text {
+        font-size: 3rem;
+    }
+}
+
+
+/*-------- omen seventeen section starts-------- */
+.omen-seventeen-main-div {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.seventeen-laptop {
+    width: 100%;
+}
+
+.s-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.s-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.c-soon-button {
+    background-color: black;
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+}
+
+.c-soon-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.c-soon-button:before,.c-soon-button:after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg,#ff55e1,red,#ffb400);
+    height: calc(100% + 0.3rem);
+    width: calc(100% + 0.3rem);
+    top: 0;
+    left: 0;
+    background-size: 200%;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    /* filter: blur(1rem); */
+}
+
+.c-soon-button:hover a{
+    text-decoration: none;
+    color: white;
+}
+.c-soon-button:after{
+    filter: blur(1.5rem);
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 300% 0;
+    }
+
+    100%{
+        background-position: 400% 0 ;
+    }
+}
+
+/* omen 17 section responsive */
+@media(max-width:1024px) {
+    .seventeen-text-div {
+        width: 80%;
+    }
+
+    .s-heading {
+        font-size: 3rem;
+    }
+
+    .seventeen-laptop {
+        width: 100%;
+    }
+
+    .omen-seventeen-main-div {
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:640px) {
+    .omen-seventeen-main-div {
+        flex-direction: column;
+        margin-top: 15rem;
+    }
+
+    .laptop-div {
+        margin-top: 5rem;
+    }
+}
+
+
+
+
+
+/*-------- victus section--------- */
+
+.victus-main {
+    width: 100%;
+    height: 90vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, black, rgb(36, 5, 5));
+
+}
+
+.victus-image {
+    width: 100%;
+    padding: 3rem;
+}
+
+.victus-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+
+}
+
+.victus-heading {
+    font-weight: bold;
+    font-size: 6rem;
+    color: white;
+}
+
+.victus-text {
+    color: white;
+    font-size: 1.2rem;
+    text-align: start;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+/*-------- victus section responsive--------- */
+
+@media(max-width:1024px) {
+    .victus-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        margin-top: 20rem;
+    }
+
+    .victus-image {
+        width: 70vw;
+        margin-top: 3rem;
+    }
+
+    .victus-heading {
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
+    .victus-text-div {
+        padding-top: 0rem;
+    }
+
+    .victus-text {
+        margin-left: 2rem;
+        padding-bottom: 12rem;
+    }
+}
+
+
+
+/* ----------------omen 15 section------------ */
+.fifteen-heading {
+    color: black;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.fifteen-main-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.mouse-div {
+    background-image: linear-gradient(to bottom, #FF0102, #FF55E0);
+    padding: 1rem;
+}
+
+.performance-text {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.fifteen-buttons-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.shop-now {
+    background-color: black;
+    position: relative;
+    padding: 0.5rem 2rem;
+    margin-top: 0rem 2rem;
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.shop-now a{
+    text-decoration: none;
+    color: white;
+}
+
+.shop-now:before,.shop-now:after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg,#ff55e1,red,#ffb400);
+    height: calc(100% + 0.3rem);
+    width: calc(100% + 0.3rem);
+    top: 0;
+    left: 0;
+    background-size: 200%;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    /* filter: blur(1rem); */
+}
+
+.shop-now:hover a{
+    text-decoration: none;
+    color: white;
+}
+.shop-now:after{
+    filter: blur(1.5rem);
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 300% 0;
+    }
+
+    100%{
+        background-position: 400% 0;
+    }
+}
+
+.learn-more {
+    position: relative;
+    border: 1px ;
+    padding: 0.5rem 2rem;
+    margin: 0rem 2rem;
+}
+
+ .learn-more:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.3rem;
+    background: linear-gradient(90deg,#ff55e1,red,#ffb400);
+    background-size: 600% 600%;
+    width: calc(100% + 0.2rem);
+    height: calc(100% + 0.2rem);
+    animation: AnimateBorder 4s ease infinite;
+    z-index: -1;
+    transform: translate(-2px, -2px);
+    transition: filter 1s ease-in;
+}
+.learn-more:after{
+    filter: blur(0.3rem);
+}
+.learn-more:hover button{
+  filter: blur(0.3rem);
+  transition: filter .4s ease-in;
+} 
+
+@keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+/* ----------------omen 15 section responsive------------ */
+@media(max-width:1024px) {
+    .fifteen-image-div {
+        width: 45%;
+    }
+
+    .mouse-div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .omen-15-real {
+        width: 100%;
+    }
+
+    .mousee {
+        width: 50%;
+    }
+}
+
+@media(max-width:640px) {
+    .fifteen-main-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fifteen-image-div {
+        width: 90%;
+    }
+
+    .omen-15-real {
+        width: 100%;
+    }
+
+    .fifteen-heading {
+        font-size: 3rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .mouse-div {
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    .fifteen-buttons-div {
+        margin-top: 5rem;
+    }
+}
+
+
+
+/*---------- most wanted section----------- */
+
+.mw-images {
+    width: 40%;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.most-wanted-all {
+    margin-top: 10rem;
+}
+
+
+
+
+/*----------- gaming hub section---------- */
+.hub-main-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #141414;
+    margin-top: 10rem;
+}
+
+.gaming-hub-text-div {
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.gaming-laptop {
+    width: 90%;
+}
+
+.only-omen {
+    color: white;
+    background-image: linear-gradient(to bottom, #FF0102, #FF55E0);
+    padding: 2rem;
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10rem;
+}
+
+.performance {
+    color: white;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.gaming-hubb {
+    font-weight: bolder;
+    color: white;
+}
+
+
+/*----------- gaming hub section responsive---------- */
+
+@media(max-width:1024px) {
+    .gaming-laptop {
+        margin-top: 10rem;
+    }
+
+    .only-omen {
+        margin-top: 10rem;
+    }
+}
+
+@media(max-width:640px) {
+    .hub-main-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hub-image {
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+/* footer starts */
+
+.footer-main {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    color: white;
+    margin-top: 7rem;
+}
+
+.semi-heading {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer-links{
+    cursor: pointer;
+}
+.footer-links:hover{
+    text-decoration: underline;
+}
+.social-icons {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+}
+
+/* footer responsive */
+
+@media(max-width:1024px) {
+    .footer-main {
+        flex-direction: column;
+        height: 150vh;
+    }
+}
