@@ -137,7 +137,7 @@
     width: 90%;
     height: 90vh;
     margin-top: 4rem;
-    background-image: url("/omen-images/header-image.png");
+    background-image: url("header-image.png");
     background-size: cover;
     background-position: center;
     display: flex;
